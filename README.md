@@ -1,2 +1,2 @@
-# Template
-Template repo for my other projects
+# Weather app
+Weather app project from Odin Project. Applying async code an use of apis.
