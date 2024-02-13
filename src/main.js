@@ -13,6 +13,8 @@ div.appendChild(buttonSearch);
 
 header.appendChild(div);
 
+getCurrentWeather("lima");
+
 buttonSearch.addEventListener("click", () => {
   const city = input.value;
   getCurrentWeather(city);

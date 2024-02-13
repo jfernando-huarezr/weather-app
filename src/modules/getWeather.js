@@ -25,7 +25,7 @@ export default async function getCurrentWeather(city) {
 
     getBackgroundGif(desiredInfo.text);
 
-    // drawWeather(desiredInfo);
+    drawWeather(desiredInfo);
   } catch (error) {
     console.log(error);
   }
