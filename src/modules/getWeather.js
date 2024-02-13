@@ -1,9 +1,11 @@
 import { WEATHER_API_KEY } from "./keys";
-import { drawWeather } from "./dom";
+import { drawWeather, drawWaiting } from "./dom";
 import getBackgroundGif from "./background";
 
 export default async function getCurrentWeather(city) {
+  drawWaiting();
   if (!city) return;
+
   try {
     const response = await fetch(
       `http://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${city}`,

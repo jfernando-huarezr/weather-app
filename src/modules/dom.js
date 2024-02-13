@@ -28,4 +28,9 @@ export function drawBackground(imageSrc) {
   main.style.backgroundRepeat = "no-repeat";
 }
 
-export function drawWaiting() {}
+export function drawWaiting() {
+  cleanMain();
+  content.innerHTML = `
+    <div class="icon"><img src="${waitingIcon}" alt="icon"></div>
+  `;
+}
